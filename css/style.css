@@ -1,0 +1,534 @@
+body {
+  margin: 0;
+  font-family: open sans, sans-serif;
+}
+
+@font-face {
+  font-family: 'open sans';
+  src: url(../fonts/OpenSans-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open sans';
+  src: url(../fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.welcome {
+  width: 320px;
+  background-image: url(../images/football_767.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.welcome::after {
+  content: "";
+  background-color: #08022f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+
+.header-logo {
+  fill: white;
+  width: 133px;
+  height: 36px;
+  margin-top: 33px;
+  padding-left: 73px;
+  padding-right: 74px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.header-title {
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 10;
+}
+
+.first-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 137px;
+  margin-bottom: 0;
+}
+
+.second-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-left: 20px;
+  padding-left: 44px;
+  margin-bottom: 0;
+}
+
+.store-buttons {
+  width: 280px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ios-button {
+  width: 280px;
+  height: 35px;
+  border: 0;
+  margin-top: 90px;
+  background-color: #5e42b0;
+  border-radius: 17.5px;
+  z-index: 8;
+  position: relative;
+}
+
+.apple-logo {
+  fill: white;
+  width: 20px;
+  height: 24px;
+  align-items: center;
+  margin-left: 82px;
+  margin-top: 2.5px;
+  margin-bottom: 7.5px;
+  z-index: 10;
+  position: relative;
+}
+
+.ios-button-title {
+  display: flex;
+}
+
+.ios-button-text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 82px;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
+
+.ios-button-text-regular {
+  font-size: 7px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 4px;
+  z-index: 10;
+}
+
+.ios-button-text-bold {
+  font-size: 7px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 10;
+}
+
+.android-button {
+  width: 280px;
+  height: 35px;
+  border: 0;
+  margin-top: 14px;
+  margin-bottom: 83px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5e42b0;
+  border-radius: 17.5px;
+  z-index: 8;
+  position: relative;
+}
+
+.android-button-title {
+  display: flex;
+}
+
+.google-play-logo {
+  fill: white;
+  width: 22px;
+  height: 24px;
+  align-items: center;
+  margin-left: 82px;
+  margin-top: 2.5px;
+  margin-bottom: 7.5px;
+  z-index: 10;
+  position: relative;
+}
+
+.android-button-text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 82px;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
+
+.android-button-text-regular {
+  font-size: 7px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 4px;
+  z-index: 10;
+}
+
+.android-button-text-bold {
+  font-size: 7px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 10;
+}
+
+.athlets-heading {
+  background-color: #ffffff;
+  height: 306px;
+}
+
+.athlets-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  margin-top: 24.5px;
+  margin-left: 20.5px;
+  margin-bottom: 0;
+}
+
+.footballer-small {
+  margin-top: 18px;
+  margin-left: 70px;
+  height: 281px;
+}
+
+.connection {
+  height: 213px;
+  background-color: #fafafa;
+}
+
+.serial-number {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  margin-left: 20.5px;
+  margin-top: 83px;
+  position: absolute;
+}
+
+.serial-number::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 15px;
+  background: #5e42b0;
+  align-items: center;
+  margin-top: 4px;
+  border-radius: 1.5px;
+}
+
+.connection-title {
+  font-size: 23px;
+  font-weight: 700;
+  color: #c1c1c1;
+  text-transform: uppercase;
+  margin-left: 46px;
+  margin-top: 83px;
+  position: absolute;
+}
+
+.connection-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+  width: 280px;
+  margin-left: 20.5px;
+  margin-top: 128.5px;
+  position: absolute;
+}
+
+.collaboration {
+  height: 262px;
+  background-color: #f5f4f9;
+}
+
+.collaboration-heading>.serial-number {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  margin-left: 20.5px;
+  margin-top: 60px;
+}
+
+.collaboration-title {
+  font-size: 23px;
+  font-weight: 700;
+  color: #c1c1c1;
+  text-transform: uppercase;
+  margin-left: 46px;
+  margin-top: 60px;
+  position: absolute;
+}
+
+.collaboration-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+  width: 280px;
+  margin-left: 20.5px;
+  margin-top: 105.5px;
+  position: absolute;
+}
+
+.growth {
+  height: 228px;
+  background-color: #5e42b0;
+}
+
+.growth-heading>.serial-number {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  margin-left: 20.5px;
+  margin-top: 60px;
+}
+
+.growth-heading>.serial-number::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 15px;
+  background: #ffffff;
+  align-items: center;
+  margin-top: 4px;
+  border-radius: 1.5px;
+}
+
+.growth-title {
+  font-size: 23px;
+  font-weight: 700;
+  color: #c1c1c1;
+  text-transform: uppercase;
+  margin-left: 46px;
+  margin-top: 60px;
+  position: absolute;
+}
+
+.growth-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+  width: 280px;
+  margin-left: 20.5px;
+  margin-top: 105.5px;
+  position: absolute;
+}
+
+.players-heading {
+  background-color: #ffffff;
+  height: 303px;
+}
+
+.players-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  margin-top: 22px;
+  margin-left: 20.5px;
+  margin-bottom: 0;
+}
+
+.basketballer-small {
+  margin-top: 22px;
+  margin-left: 9px;
+  height: 248px;
+}
+
+.players>.collaboration {
+  height: 192px;
+  background-color: #f5f4f9;
+}
+
+.players>.growth {
+  height: 189px;
+  background-color: #090c35;
+}
+
+.growth-text-players {
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 280px;
+  margin-left: 20.5px;
+  margin-top: 105.5px;
+  position: absolute;
+}
+
+.serial-number-players {
+  font-size: 14px;
+  font-weight: 700;
+  color: #8765dd;
+  margin-left: 20.5px;
+  margin-top: 60px;
+  position: absolute;
+}
+
+.serial-number-players::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 15px;
+  background: #ffffff;
+  align-items: center;
+  margin-top: 4px;
+  border-radius: 1.5px;
+}
+
+.growth-title-players {
+  font-size: 23px;
+  font-weight: 700;
+  color: #c1c1c1;
+  text-transform: uppercase;
+  margin-left: 46px;
+  margin-top: 57px;
+  position: absolute;
+}
+
+.be-active {
+  height: 563px;
+}
+
+.header-img {
+  height: 351px;
+}
+
+.number-container {
+  width: 70px;
+  height: 70px;
+  background-color: #5e42b0;
+  margin-top: -58px;
+  margin-left: 20px;
+  position: absolute;
+}
+
+.serial-number-container {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f5f6f7;
+  margin-left: 27.5px;
+  margin-top: 27px;
+}
+
+.serial-number-container::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 15px;
+  background: #ffffff;
+  opacity: 0.6;
+  align-items: center;
+  margin-top: 4px;
+  border-radius: 1.5px;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #e7e7e7;
+  margin-left: 20px;
+  margin-top: 34px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.section-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  width: 280px;
+  margin-left: 20px;
+  margin-top: 0;
+}
+
+.find-contact {
+  height: 547px;
+}
+}
+
+.work-it {
+  height: 576px;
+}
+
+.footer {
+  height: 568px;
+  background-image: url(../images/game_767.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.footer::after {
+  content: "";
+  background-color: #08022f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+
+.logo-container {
+  width: 72px;
+  height: 74px;
+  background-color: #53399f;
+  margin-left: 124px;
+  margin-top: 99px;
+  border-radius: 25px;
+  position: absolute;
+  z-index: 8;
+}
+
+.footer-logo {
+  fill: #ffffff;
+  width: 55px;
+  height: 50px;
+  z-index: 10;
+}
+
+.downloading {
+  margin-top: 232px;
+  margin-left: 20px;
+  position: absolute;
+}
+
+.download {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 10;
+  margin-bottom: 0;
+}
+
+.download-text {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 14px;
+}
